@@ -78,7 +78,6 @@ priority INTEGER
 ----------------------------
 
 --INSERT ARTIFACT--
-BEGIN;
 INSERT INTO ARTIFACT (id,type,year,material,artist_name,title,description,extended_description,media_url,view_count) VALUES (9,'','year...','','','poem title here','poem description here...','','',0);
 INSERT INTO ARTIFACT (id,type,year,material,artist_name,title,description,extended_description,media_url,view_count) VALUES (1,'sculpture','1776','stone','Tony Caponi','Pompei','Description of Pompei','Extended description of Pompei','',45);
 INSERT INTO ARTIFACT (id,type,year,material,artist_name,title,description,extended_description,media_url,view_count) VALUES (7,'bathroom','2336','plastic','John','Bathroom','Description','More description here','',105);
@@ -175,28 +174,20 @@ INSERT INTO ARTIFACT (id,type,year,material,artist_name,title,description,extend
 INSERT INTO ARTIFACT (id,type,year,material,artist_name,title,description,extended_description,media_url,view_count) VALUES (156,'sculpture','1969','Granite','Anthony Caponi','Mars','<p>Mars is a good example of Caponi’s use of stone. the stone exterior is left almost untouched as he worked the interior to discover its nature variations. The subject matter of the sculpture is the stone itself. The marks left by the tools have become an element of the design. <br/></p>','','',0);
 INSERT INTO ARTIFACT (id,type,year,material,artist_name,title,description,extended_description,media_url,view_count) VALUES (158,'sculpture','1969','Granite','Anthony Caponi','Mars','<p>Mars is a good example of Caponi’s use of stone. the stone exterior is left almost untouched as he worked the interior to discover its nature variations. The subject matter of the sculpture is the stone itself. The marks left by the tools have become an element of the design. <br/></p>','','',0);
 INSERT INTO ARTIFACT (id,type,year,material,artist_name,title,description,extended_description,media_url,view_count) VALUES (160,'sculpture','1969','Granite','Anthony Caponi','Mars','<p>Mars sculpture.</p>','','',0);
---ROLLBACK
---COMMIT
+
 
 --INSERT EVENTS--
-BEGIN;
 INSERT INTO events (id,title,date,time,description,notes,category,photo_url,age_group,price) VALUES (8,'Hot Art! Workshops','2018-07-17','18:00:00','Learn how to translate your design into an open faced sand mold that will be filled with molten metal at the community iron pour. Students will gain a basic understanding of metal casting and come away with an object of their design. All ages are welcome! No previous experience required. Families with young children can work together. Extra molds will be available at the pour for last minute enthusiasts. Price per pour.','Add sign up link.','Workshop','https://cdn.filestackcontent.com/T0cwYvkyRkefI3bpQPtz','12+','$(35.00');
 INSERT INTO events (id,title,date,time,description,notes,category,photo_url,age_group,price) VALUES (6,'Round the Bend Music & Beer: Sawtooth Brothers w/ Stanton West','2018-08-17','17:30:00','Join us at the park for an evening celebrating music, beer, and food. Grab a blanket, bring friends, family or your dog and relax under the leafy canopy. Enjoy your favorite music while you sip on a beer from Eagan’s Bald Man Brewing Company and have a bite to eat from the food trucks.','Bald Man Brewing Company','Music','https://cdn.filestackcontent.com/ELR4O9ZqTjunXcxhzlHx','free for children under 12','$15.00');
 INSERT INTO events (id,title,date,time,description,notes,category,photo_url,age_group,price) VALUES (10,'Kevin Kling & Simone Perrin','2018-08-19','18:30:00','Kevin Kling and Simone Perrin collaborate to create a performance that covers a range of humor, tenderness and music. Kevin Kling, best known for his (popular commentaries on National Public Radio’s All Things Considered and his storytelling stage shows, delivers hilarious, often tender stories. Kling’s autobiographical tales are as enchanting as they are true to life: hopping freight trains, getting hit by lightning, performing his banned play in Czechoslovakia, growing up in Minnesota, and eating things before knowing what they are. Joining Kling will be theater actress, composer, vocalist and accordionista Simone Perrin, who has been featured on A Prairie Home Companion and performs frequently with Kevin.','Add purchase link','Music','https://cdn.filestackcontent.com/WLBMUHUBS1O8tkTKmr4u','free for (children under 12','$5.00');
 INSERT INTO events (id,title,date,time,description,notes,category,photo_url,age_group,price) VALUES (4,'Round the Bend Music & Beer: Elizabeth Ghandour','2018-07-13','18:30:00','Join us at the park for an evening celebrating music, beer, and food. Grab a blanket, bring friends, family or your dog and relax under the leafy canopy. Enjoy your favorite music while you sip on a beer from Eagan’s Bald Man Brewing Company and have a bite to eat from the food trucks.','Bald Man Brewing Company','Music','https://cdn.filestackcontent.com/fN9oZBTgfmsoZTsGZg1q','free for children under 12(','$15.00');
 INSERT INTO events (id,title,date,time,description,notes,category,photo_url,age_group,price) VALUES (3,'Round the Bend Music & Beer: AHI with Land at Last','2018-06-08','17:30:00','Join us at the park for an evening celebrating music, beer, and food. Grab a blanket, bring friends, family or your dog and relax under the leafy canopy. Enjoy your favorite music while you sip on a beer from Eagan’s Bald Man Brewing Company and have a bite to eat from the food trucks.','Bald Man Brewing Company','Music','https://cdn.filestackcontent.com/xG47IrFJRyyNagmTRErA','free for children under 12','$15.00');
 INSERT INTO events (id,title,date,time,description,notes,category,photo_url,age_group,price) VALUES (7,'Hot Art! Workshops','2018-07-14','10:00:00','Learn how to translate your design into an open faced sand mold that will be filled with molten metal at the community iron pour. Students will gain a basic understanding of metal casting and come away with an object of their design. All ages are welcome! No previous experience required. Families with young children can work together. Extra molds will be available at the pour for last minute enthusiasts. Price per pour.','Add sign up link.','Workshops','https://cdn.filestackcontent.com/eGaqiob1Q0Ko8G826gHS','12+','$35.00');
---ROLLBACK
---COMMIT
 
 --INSERT USERS--
-BEGIN;
-INSERT INTO users(id,first_name,last_name,username,password,email,user_type) VALUES (37,'Steven','Reid','admin','$2a$10$MYCgCIjWXi01XVZ94mQgfusdo494Xt.FYWjLjDTOHQDfw5C2NM2EG','steven@caponiartpark.org','')
---ROLLBACK
---COMMIT
+INSERT INTO users(id,first_name,last_name,username,password,email,user_type) VALUES (37,'Steven','Reid','admin','$2a$10$MYCgCIjWXi01XVZ94mQgfusdo494Xt.FYWjLjDTOHQDfw5C2NM2EG','steven@caponiartpark.org','');
 
 --INSERT MAP--
-BEGIN;
 INSERT INTO map (id,location_name,lat,long,reveal_type) VALUES (9,'Struggle of the Elements',44.80479332170508,-93.15334187829228,'static');
 INSERT INTO map (id,location_name,lat,long,reveal_type) VALUES (10,'Snake',44.80502930052672,-93.15306024634572,'static');
 INSERT INTO map (id,location_name,lat,long,reveal_type) VALUES (13,'Cornerstone',44.805588794843025,-93.15182106578084,'static');
@@ -225,11 +216,8 @@ INSERT INTO map (id,location_name,lat,long,reveal_type) VALUES (53,'Monument to 
 INSERT INTO map (id,location_name,lat,long,reveal_type) VALUES (54,'Two Lovers',44.805236732725916,-93.15312193715306,'proximity');
 INSERT INTO map (id,location_name,lat,long,reveal_type) VALUES (56,'Coiled Perch',44.805518382591465,-93.15158234917851,'proximity');
 INSERT INTO map (id,location_name,lat,long,reveal_type) VALUES (72,'name',44.8058076431842,-93.1539748796198,'proximity');
---ROLLBACK
---COMMIT
 
 --INSERT INTO MAP_ARTIFACTS_JOIN--
-BEGIN;
 INSERT INTO map_artifact_join (id,artifact_id,location_id,main_photo,priority) VALUES (167,101,54,FALSE,0);
 INSERT INTO map_artifact_join (id,artifact_id,location_id,main_photo,priority) VALUES (219,143,72,TRUE,0);
 INSERT INTO map_artifact_join (id,artifact_id,location_id,main_photo,priority) VALUES (220,123,72,FALSE,0);
@@ -297,11 +285,8 @@ INSERT INTO map_artifact_join (id,artifact_id,location_id,main_photo,priority) V
 INSERT INTO map_artifact_join (id,artifact_id,location_id,main_photo,priority) VALUES (162,123,56,TRUE,0);
 INSERT INTO map_artifact_join (id,artifact_id,location_id,main_photo,priority) VALUES (163,59,56,FALSE,0);
 INSERT INTO map_artifact_join (id,artifact_id,location_id,main_photo,priority) VALUES (164,100,13,FALSE,0);
---ROLLBACK
---COMMIT
 
 --INSERT INFORMATION--
-BEGIN;
 INSERT INTO information (id,description,category) VALUES (16,'Cars and bicycles are not allowed beyond the parking lot. A bike rack is available for your use.','guideline');
 INSERT INTO information (id,description,category) VALUES (17,'Please help keep the park clean by using trash receptacles located throughout the park.','guideline');
 INSERT INTO information (id,description,category) VALUES (19,'Please do not climb on the moss. The moss is a part of the art and difficult to maintain.','guideline');
@@ -310,11 +295,6 @@ INSERT INTO information (id,description,category) VALUES (22,'Buildings located 
 INSERT INTO information (id,description,category) VALUES (21,'Children are encouraged to touch the sculptures, however, for safety''s sake and to prevent damage, please do not climb on the art.','guideline');
 INSERT INTO information (id,description,category) VALUES (31,'Dogs are allowed.','guideline');
 INSERT INTO information (id,description,category) VALUES (15,'Park trails are for pedestrians only.','guideline');
---ROLLBACK
---COMMIT
 
 --INSERT GUEST_USERS--
-BEGIN;
-INSERT INTO guest_users (id,name,email) VALUES (9,'Christiana','christiana.routon@gmail.com')
---ROLLBACK
---COMMIT
+INSERT INTO guest_users (id,name,email) VALUES (9,'Christiana','christiana.routon@gmail.com');

@@ -34,10 +34,12 @@ Link to software that is required before you attempt to start the app (e.g. node
 
 Steps to get the development environment running.
 
+- Once you have your Google Maps API key, source it into the app using the google maps CDN (index.html)
+- Once you have your Filestack API key, source it into the app (admin.service.js)
 - Navigate to the project directory and run `npm install` to install dependencies. 
 - Create a database called caponi_art_park in postgreSQL. 
-- Copy and paste the contents of the caponi.sql file for a list of all SQL scripts to run in order to build out the database tables
-- Once you have your Google Maps API key, source it into the app using the google maps CDN
+- Copy and paste the contents of the caponi.sql file for a list of all SQL scripts to run in order to build out the database tables (All table creations can be run together.  Insert statements should be run separately, by table)
+- To access admin side of application go to base_url/#!/admin (username: admin, password: admin)
 
 ### Completed Features
 
