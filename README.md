@@ -19,6 +19,8 @@ Heroku link: https://caponiartpark.herokuapp.com
 - Fork this repository to your GitHub and clone it to your local environment. 
 - Install all prerequisites. 
 - Add your new Google Maps API key to the index.html file
+- Add your new Filestack API key to the admin.service.js file
+
 ### Prerequisites
 
 Link to software that is required before you attempt to start the app (e.g. node, mongo).
