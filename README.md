@@ -26,6 +26,7 @@ Link to software that is required before you attempt to start the app (e.g. node
 - [Node.js](https://nodejs.org/en/)
 - [PostgreSQL] (https://www.postgresql.org/download/)
 - [Google Maps API key] (https://developers.google.com/maps/documentation/javascript/get-api-key)
+- [Filestack API Key] (https://www.filestack.com/)
 
 ### Installing
 
