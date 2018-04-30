@@ -1,7 +1,7 @@
 capApp.service('AdminService', ['$http', '$location', function ($http, $location) {
     var self = this;
 
-    self.client = filestack.init("AEJTEv3LSS0iEXB5JB7swz"); //FILESTACK API KEY -- INSERT NEW ONE HERE
+    self.client = filestack.init(""); //FILESTACK API KEY -- INSERT NEW ONE BETWEEN QUOTES
 
     self.currentPage = {
         list: []
